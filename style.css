@@ -1,0 +1,155 @@
+/* .box{background:yellow;
+width:300px;
+height:300px;
+animation-name:background;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-fill-mode: forwards;
+animation-direction:alternate;
+animation-timing-function:ease-in;
+}
+@keyframes background {
+    0%{background:yellow; left:0px; top:0px; border-radius:0 0 0 0
+    }
+    25%{background:orange; margin-left:100px; margin-top:20px;border-radius:50% 0 0 0
+    }
+
+    55%{background:red;  margin-left:100px; margin-top:40px;border-radius:50% 50% 0 0
+    
+    }
+
+
+    75%{background:blue;  margin-left:30px; margin-top:80px ; border-radius:50% 50% 50% 0}
+    100%{background:yellow; border-radius:50% 50% 50% 50%}
+} */
+ /* body{background-color: #333;
+color:white;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+} */
+button{color:aqua;
+background:none;
+border:white 1px solid;
+font-size:15px;
+padding:1rem 2rem
+
+}
+h1{
+    color:aqua;
+    animation-name: Header;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes Header {
+    0%{margin-left:-50px;
+    opacity: 10%;
+    }
+}
+
+p{animation: Paragraph 3s ease-in;}
+@keyframes Paragraph {
+    0%{margin-left:300px;
+    opacity:10%;
+
+    }
+}
+button:hover{
+    background:rgb(10, 162, 162);
+    color:white;
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow';
+    transition:ease-in-out;
+    transition-property: background;
+    transition-duration: 1s;
+    ;
+}
+img{height:200px;
+
+
+}
+.I{ animation-name:Images;
+animation-duration: 4s;}
+.images{
+    animation-name:Images;
+    animation-duration: 0.5s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function:ease-in-out;
+}
+@keyframes Images{
+    0%{margin-top:900px;
+    opacity:0%;
+    border-top-right-radius: 90%;
+    border-bottom-left-radius: 80%;
+    }
+    25%{margin-left:120px;
+    border-top-right-radius: 90%;
+    border-bottom-left-radius: 50%;
+animation-fill-mode: forwards;
+}
+}
+.B{ animation-name:Images;
+    animation-duration: 4s;}
+    .D{ animation-name:Images;
+        animation-duration: 4s;}
+        .E{ animation-name:Images;
+            animation-duration: 4s;}
+ /*
+.box{background:white;
+width:300px;
+height:300px;
+margin:auto;
+margin-top:200px;
+transition-property:all;
+transition-duration: 6s, 5s;
+}
+.box:hover{
+    background:red;
+    cursor: pointer;
+    border-radius:50%;
+} */
+.wrapper{background-image: url(/wallpaperbetter.com_1600x900\ \(1\).jpg);
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+height:600px;
+
+}
+.wrapper::before{
+    content: '';
+    width:100%;
+    height: 600px;
+    background:rgba(0,0,0,0.6)
+}
+
+body {
+    margin: 0;
+    background:cadetblue
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) to control the darkness (0 to 1) */
+    pointer-events: none; /* Allows clicks to "fall through" the overlay to the image below */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* .grid-container{display:grid;
+grid-template-columns:200px  300px 400px;
+background-color: aqua;
+grid-template-rows:100px 150px
+} */
